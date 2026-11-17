@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kaisheng (Jason) Zhou — Computer Science and Mathematics at Carleton College. Research in AI for scientific discovery, agent systems, and digital scholarship.">
+  <meta name="color-scheme" content="light dark">
+  <title>Kaisheng (Jason) Zhou</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="#about" aria-label="Back to introduction">KZ<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#background">Background</a></nav>
+      <button id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.8 14A8.7 8.7 0 0 1 10 3.2 8.7 8.7 0 1 0 20.8 14Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
+    </header>
+
+    <main id="main">
+      <section class="intro" id="about" aria-labelledby="name">
+        <div class="identity">
+          <div class="monogram" role="img" aria-label="KZ monogram"><span class="monogram-letters">kz<span>.</span></span><span class="monogram-caption">CARLETON</span></div>
+          <h1 id="name">Kaisheng Zhou</h1>
+          <p class="preferred-name">Jason</p>
+          <p class="affiliation">Computer Science &amp; Mathematics<br>Carleton College · Class of 2028</p>
+          <div class="social-links"><a href="mailto:zhouk2@carleton.edu">Email</a><span aria-hidden="true">/</span><a href="https://github.com/zhouk2-blip">GitHub</a><span aria-hidden="true">/</span><a href="assets/Resume_Jason.pdf" target="_blank" rel="noopener">CV ↗</a></div>
+        </div>
+        <div class="bio">
+          <p class="eyebrow">RESEARCH &amp; THINGS I BUILD</p>
+          <p>I'm an undergraduate at <a href="https://www.carleton.edu/">Carleton College</a> studying Computer Science and Mathematics. I'm interested in <strong>AI for scientific discovery</strong> and in building agent systems that can turn ideas into experiments.</p>
+          <p>I work with <a href="https://aryandeshwal.github.io/">Prof. Aryan Deshwal</a> at the University of Minnesota on AI agents for algorithm development, using molecular design as a testing ground. I began this collaboration during a summer research internship in 2026.</p>
+          <p>I'm also building <a href="#cleo">Cleo</a>, a local-first AI workspace, and contributing to digital scholarship at Carleton, where I developed the <a href="#historical-maps">Historical Maps plugin</a> for the Carleton Guide to Medieval Rome.</p>
+          <p class="bio-note">Previously, I worked on RNA 3D structure prediction and medical computer vision.</p>
+        </div>
+      </section>
+
+      <section id="research" class="section research" aria-labelledby="research-title">
+        <div class="section-heading"><h2 id="research-title">Research interests</h2><span class="section-index" aria-hidden="true">01</span></div>
+        <p>I like problems where learning, experimentation, and building useful systems meet.</p>
+        <ul class="focus-list">
+          <li><strong>AI for science.</strong> Agent-guided algorithm discovery, molecular design, and learning from experiments.</li>
+          <li><strong>Agent systems.</strong> Task orchestration, persistent memory, and reliable execution across tools.</li>
+          <li><strong>Learning with limited data.</strong> Structural prediction and computer vision in data-scarce settings.</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading"><h2 id="projects-title">Selected research &amp; projects</h2><span class="section-index" aria-hidden="true">02</span></div>
+        <article class="project" id="agent-research">
+          <div class="project-visual research-visual" aria-label="Conceptual diagram of an iterative research workflow" role="img"><span class="visual-label">AI FOR SCIENTIFIC DISCOVERY</span><div class="research-loop"><span>Explore</span><i>→</i><span>Experiment</span><i>→</i><span>Refine</span></div><div class="molecule" aria-hidden="true"><svg viewBox="0 0 240 100" fill="none"><path d="M51 50 77 15h48l26 35-26 35H77L51 50Zm100 0h37l24-30M188 50l24 30" stroke="currentColor" stroke-width="2"/><path d="M83 24h36m-36 52h36M61 50l20-27" stroke="currentColor" stroke-width="1.2"/><circle cx="212" cy="20" r="5" fill="currentColor"/><circle cx="212" cy="80" r="5" fill="currentColor"/></svg></div><span class="visual-caption">An idea → an experiment → new evidence</span></div>
+          <div class="project-copy"><p class="project-category">RESEARCH · UNIVERSITY OF MINNESOTA</p><h3>AI agents for algorithm discovery</h3><p class="project-meta">With Prof. Aryan Deshwal · Summer 2026–present</p><p>Exploring how AI agents can develop and improve algorithms for molecular design. My work connects the exploration of new ideas with focused refinement, experimental comparison, and reliability checks.</p><div class="project-links"><a href="https://aryandeshwal.github.io/">Research advisor ↗</a></div></div>
+        </article>
+        <article class="project" id="cleo">
+          <div class="project-visual cleo-visual"><img src="assets/cleo.png" alt="Cleo's illustrated blue cat mascot" width="100" height="100" loading="lazy"><span class="cleo-name">Cleo</span><span class="visual-caption">A local-first AI workspace</span></div>
+          <div class="project-copy"><p class="project-category">INDEPENDENT PROJECT · AGENT SYSTEMS</p><h3>Cleo: an AI workspace with continuity</h3><p class="project-meta">Desktop · CLI · Persistent memory</p><p>A workspace bringing chat, coding agents, resumable sessions, and project-scoped memory together. Cleo keeps session history and memory on the user's device and supports configurable models and agent harnesses.</p><div class="project-links"><a href="https://github.com/zhouk2-blip/Cleo-AI-agent">Code ↗</a><a href="https://stdoses72.github.io/Cleo-AI-agent/">Project website ↗</a></div></div>
+        </article>
+        <article class="project" id="historical-maps">
+          <a class="project-visual map-visual" href="https://omeka-dev.carleton.edu/cgmrdev/historical-maps" aria-label="Explore the Historical Maps plugin"><img src="assets/historical-maps.jpg" alt="Historical Maps interface showing a historical map of Rome and the map library" width="480" height="300" loading="lazy"><span class="image-label">HISTORICAL MAPS ↗</span></a>
+          <div class="project-copy"><p class="project-category">DIGITAL SCHOLARSHIP · CARLETON COLLEGE</p><h3>Historical Maps for Medieval Rome</h3><p class="project-meta">Carleton Guide to Medieval Rome · DSI</p><p>I developed the Historical Maps plugin for Carleton's Guide to Medieval Rome. The interface lets visitors explore places across historical maps, browse a map library, and connect locations with walking tours using IIIF imagery, Allmaps, and Leaflet.</p><div class="project-links"><a href="https://omeka-dev.carleton.edu/cgmrdev/historical-maps">Explore the maps ↗</a><a href="https://omeka-dev.carleton.edu/cgmrdev/">CGMR website ↗</a></div></div>
+        </article>
+        <article class="project" id="rna">
+          <div class="project-visual rna-visual" role="img" aria-label="Schematic of sequence-to-structure RNA prediction"><span class="visual-label">SEQUENCE → STRUCTURE</span><svg viewBox="0 0 260 120" fill="none" aria-hidden="true"><path d="M40 80C15 30 70 10 95 45s-15 70 20 60 0-100 45-85 0 80 45 70 30-60 5-65" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><g fill="currentColor"><circle cx="40" cy="80" r="5"/><circle cx="42" cy="29" r="5"/><circle cx="95" cy="45" r="5"/><circle cx="94" cy="96" r="5"/><circle cx="125" cy="64" r="5"/><circle cx="160" cy="20" r="5"/><circle cx="180" cy="73" r="5"/><circle cx="222" cy="76" r="5"/><circle cx="210" cy="25" r="5"/></g></svg><span class="visual-caption">CNN + Transformer · RNA folding</span></div>
+          <div class="project-copy"><p class="project-category">INDEPENDENT RESEARCH · MACHINE LEARNING</p><h3>RNA 3D structure prediction</h3><p class="project-meta">January–April 2025</p><p>Predicting 3D nucleotide coordinates directly from RNA sequences with a hybrid CNN–Transformer model. I explored local geometric structure and long-range dependencies under limited data and compute, using residue-level supervision masks and length-aware batching.</p><div class="project-links"><a href="https://github.com/zhouk2-blip/Predicting-RNA-folding">Code ↗</a></div></div>
+        </article>
+      </section>
+
+      <section id="background" class="section" aria-labelledby="background-title">
+        <div class="section-heading"><h2 id="background-title">Background</h2><span class="section-index" aria-hidden="true">03</span></div>
+        <div class="background-row"><span class="date">2025 SUMMER</span><div><h3>Computer Vision &amp; Medical AI Intern</h3><p class="muted">Shanghai Software Center · Hospital-affiliated project</p><p>Developed YOLO- and DETR-based cell detection models for sputum cytology, with a human-in-the-loop annotation workflow using Label Studio.</p></div></div>
+        <div class="background-row"><span class="date">2024–2028</span><div><h3>Carleton College</h3><p class="muted">Computer Science &amp; Mathematics · Expected graduation June 2028</p><p>Coursework includes natural language processing, algorithms, advanced linear algebra, probability, and ordinary differential equations.</p></div></div>
+        <div class="skills"><span>Tools I work with</span><p>Python · PyTorch · R · Java · C++ · OpenCV · Scikit-learn · SQL</p></div>
+      </section>
+      <section class="contact" aria-labelledby="contact-title"><div><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">Let's talk research.</h2><p>I'm happy to connect about AI for science, agent systems, and research opportunities.</p></div><a class="contact-link" href="mailto:zhouk2@carleton.edu">zhouk2@carleton.edu <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer><span>© 2026 Kaisheng Zhou</span><span>Inspired by <a href="https://zhihanyang.com/">Zhihan Yang's website</a><span class="footer-divider"> · </span><a href="#about">Back to top ↑</a></span></footer>
+  </div>
+</body>
+</html>
