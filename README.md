@@ -8,4 +8,4 @@ Edit `index.html` for content, `styles.css` for appearance, and `assets/Resume_J
 
 Preview locally with `python -m http.server 4173` and open http://localhost:4173.
 
-Design inspired by [Zhihan Yang](https://zhihanyang.com/). Cleo mascot from the Cleo project; Historical Maps image captured from the user's CGMR plugin.
+Cleo logo follows the owner's supplied reference. Historical Maps image captured from the owner's CGMR plugin.
